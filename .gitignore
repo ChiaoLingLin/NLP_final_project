@@ -1,0 +1,42 @@
+# ===== Python cache =====
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ===== Virtual env =====
+env/
+.venv/
+venv/
+.env/
+
+# ===== IDE / 編輯器 =====
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===== OS 雜物 =====
+.DS_Store
+
+# ===== Dataset =====
+# 先忽略全部 dataset 檔案...
+dataset/*
+# ...保留教學用 / 小 sample / trial 檔
+!dataset/*trial*.jsonl
+!dataset/README.md
+
+# ===== Model / Checkpoints (超大) =====
+model/
+*.pth
+*.pt
+*.bin
+
+# ===== Log / 中間結果 =====
+log/
+*.log
+task1&2_predict.txt
+
+# ===== 任務輸出檔（可重生） =====
+tasks/
+!tasks/README.md
